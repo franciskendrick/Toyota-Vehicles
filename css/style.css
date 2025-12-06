@@ -2,7 +2,7 @@
 :root {
     --red: #d50000;
     --black: #1a1d24;
-    --white: #f9f9f9;
+    --white: #fffcfc;
 }
 
 /* RESET */
@@ -13,10 +13,13 @@
     font-family: Arial, sans-serif;
 }
 
-
 /* HTML */
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
 }
 
 
