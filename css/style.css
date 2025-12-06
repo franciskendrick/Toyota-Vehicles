@@ -105,6 +105,7 @@
     margin: 0 40px; /* side margins */
 }
 
+/* Line */
 .section-line {
     width: 25%;
     height: 8px;
@@ -137,6 +138,20 @@
     gap: 30px;
 }
 
+.car-grid ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;        /* allows wrapping */
+    gap: 90px;      /* spacing between cards */
+    padding: 0;
+}
+
+.car-grid li {
+    flex: 1 1 calc(20% - 90px);     /* 4 cards per row */
+    display: flex;
+    justify-content: justify;
+}
+
 .car-card {
     text-decoration: none;
 }
@@ -154,9 +169,12 @@
 .car-image-wrapper span {
     position: absolute;
     left: 75%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
     font-size: 24px;
     font-weight: bold;
     color: var(--black);
     text-decoration: none;
+    white-space: nowrap;        /* prevents line breaks */
+    /* text-overflow: ellipsis; */
+    /* overflow: hidden; */
 }
