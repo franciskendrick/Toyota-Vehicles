@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamaraw</title>
+    <link rel="stylesheet" href="../../css/cars.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION BAR -->
+    <nav class="top-nav">
+        <a href="https://toyota.com.ph/" class="logo-link" target="_blank">
+            <img src="../../images/toyota_logo.png" alt="Toyota Logo">
+        </a>
+
+        <ul class="main-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../about.html">About Us</a></li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER SECTION -->
+    <header class="hero">
+        <img src="../../images/Utility_Vehicles/Tamaraw/header.webp" alt="Header">
+        <div class="hero-text">TAMARAW</div>
+    </header>
+
+    <!-- CAR DETAILS -->
+    <div class="car-details-container">
+
+        <div class="car-image">
+            <img src="../../images/Utility_Vehicles/Tamaraw/Super White II.webp" alt="Tamaraw">
+        </div>
+
+        <div class="car-info">
+            <p class="variant-name">TAMARAW 2.4 Dropside DSL M/T</p>
+            <p class="color-name">Super White II</p>
+
+
+            <p class="starts-at">Starts at</p>
+            <p class="price">₱ 937,000</p> 
+
+
+            <div class="color-options">
+                <button class="color-box"
+                    data-color="Super White II"
+                    data-img="../../images/Utility_Vehicles/Tamaraw/Super White II.webp"
+                    style="background-color: rgb(255, 255, 255);">
+                </button>
+            </div>
+            
+            <p class="title">Transmission</p>
+            <p class="type">5-Speed M/T</p> 
+            <br>
+            <p class="title">Fuel Type</p>
+            <p class="type">Diesel</p> 
+            <br>
+            <p class="title">Seating Capacity</p>
+            <p class="type">2</p> 
+        </div>
+    </div>
+
+    <!-- CAR SPECIFICATIONS -->
+    <div class="car-specs">
+        <h2 class="specs-title">Full Specifications</h2>
+
+        <table class="specs-table">
+            <tr><th colspan="2">Dimension and Weight</th></tr>
+            <tr><td>Overall Dimension (mm)</td><td>5300 x 1800 x 1800</td></tr>
+            <tr><td>Wheelbase (mm)</td><td>3085</td></tr>
+            <tr><td>Tread Front / Rear</td><td>1510 / 1510</td></tr>
+            <tr><td>Min. Turning Radius</td><td>5.4</td></tr>
+            <tr><td>Payload Capacity</td><td>1100</td></tr>
+            <tr><td>Seating Capacity</td><td>2</td></tr>
+
+            <tr><th colspan="2">Engine</th></tr>
+            <tr><td>Engine Type</td><td>2GD-FTV</td></tr>
+            <tr><td>Engine Displacement (cc)</td><td>2393</td></tr>
+            <tr><td>Maximum Output (ps/rpm)</td><td>150 / 3400</td></tr>
+            <tr><td>Maximum Torque (Nm/Rpm)</td><td>343 / 1400-2800</td></tr>
+            <tr><td>Fuel Type</td><td>Diesel</td></tr>
+
+            <tr><th colspan="2">Transmission</th></tr>
+            <tr><td>Transmission</td><td>5MT</td></tr>
+
+            <tr><th colspan="2">Interior</th></tr>
+            <tr><td>Seat Material</td><td>PVC</td></tr>
+            <tr><td>Driver Seat Type & Adjustment</td><td>Bench Type | D: 4-way Manual</td></tr>
+            <tr><td>Steering Type</td><td>Power Steering</td></tr>
+            <tr><td>Steering Wheel Material</td><td>Urethane</td></tr>
+
+            <tr><th colspan="2">Exterior</th></tr>
+            <tr><td>Headlamps</td><td>Halogen</td></tr>
+            <tr><td>Tire & Disk Wheel</td><td>195R14C Steel</td></tr>
+            <tr><td>Front Bumper</td><td>Material Color: Black</td></tr>
+            <tr><td>Radiator Grille</td><td>Material Color: Black</td></tr>
+
+            <tr><th colspan="2">Function</th></tr>
+            <tr><td>Airconditioning System</td><td>Manual Cooler</td></tr>
+            <tr><td>Cupholder</td><td>2</td></tr>
+
+            <tr><th colspan="2">Chassis</th></tr>
+            <tr><td>Front/Rear Brake</td><td>Disc / Drum</td></tr>
+            <tr><td>Tires</td><td>195R14C Steel</td></tr>
+            <tr><td>Suspension</td><td>IFS Coil / Rigid Leaf Spring</td></tr>
+
+            <tr><th colspan="2">Rear Conversion</th></tr>
+            <tr><td>Type</td><td>Dropside</td></tr>
+            <tr><td>3-Side Panel Access with Lashing Hooks</td><td>With</td></tr>
+            <tr><td>Side Step</td><td>With</td></tr>
+        </table>
+    </div>
+
+    <!-- JAVASCRIPT CODE FOR COLOR-BOX BUTTONS -->
+    <script>
+    document.querySelectorAll(".color-box").forEach(button => {
+        button.addEventListener("click", function () {
+            const newColor = this.getAttribute("data-color");
+            const newImage = this.getAttribute("data-img");
+
+            document.querySelector(".car-image img").src = newImage;
+            document.querySelector(".color-name").textContent = newColor;
+        });
+    });
+    </script>
+</body>
+</html>
