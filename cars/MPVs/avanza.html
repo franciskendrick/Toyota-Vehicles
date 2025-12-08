@@ -30,7 +30,7 @@
     <div class="car-details-container">
 
         <div class="car-image">
-            <img src="../../images/MPVs/Avanza/default.webp" alt="Avanza">
+            <img src="../../images/MPVs/Avanza/Silver Metallic.webp" alt="Avanza">
         </div>
 
         <div class="car-info">
@@ -43,13 +43,24 @@
 
 
             <div class="color-options">
-                <button class="color-box" style="background-color: silver;"></button>
-                <button class="color-box" style="background-color: white;"></button>
-                <button class="color-box" style="background-color: black;"></button>
-                <button class="color-box" style="background-color: red;"></button>
-                <button class="color-box" style="background-color: blue;"></button>
-            </div>
+                <button class="color-box"
+                    data-color="Silver Metallic"
+                    data-img="../../images/MPVs/Avanza/Silver Metallic.webp"
+                    style="background-color: silver;">
+                </button>
 
+                <button class="color-box"
+                    data-color="Black Metallic 2"
+                    data-img="../../images/MPVs/Avanza/Black Metallic 2.webp"
+                    style="background-color: black;">
+                </button>
+
+                <button class="color-box"
+                    data-color="White 2"
+                    data-img="../../images/MPVs/Avanza/White 2.webp"
+                    style="background-color: white;">
+                </button>
+            </div>
             
             <p class="title">Transmission</p>
             <p class="type">M/T</p> 
@@ -61,5 +72,17 @@
             <p class="type">7</p> 
         </div>
     </div>
+
+    <script>
+    document.querySelectorAll(".color-box").forEach(button => {
+        button.addEventListener("click", function () {
+            const newColor = this.getAttribute("data-color");
+            const newImage = this.getAttribute("data-img");
+
+            document.querySelector(".car-image img").src = newImage;
+            document.querySelector(".color-name").textContent = newColor;
+        });
+    });
+    </script>
 </body>
 </html>
