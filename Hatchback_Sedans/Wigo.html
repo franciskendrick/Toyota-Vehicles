@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wigo</title>
+    <link rel="stylesheet" href="../../css/cars.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION BAR -->
+    <nav class="top-nav">
+        <a href="https://toyota.com.ph/" class="logo-link" target="_blank">
+            <img src="../../images/toyota_logo.png" alt="Toyota Logo">
+        </a>
+
+        <ul class="main-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../about.html">About Us</a></li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER SECTION -->
+    <header class="hero">
+        <img src="../../images/Hatchback_Sedans/Wigo/header.webp" alt="Header">
+        <div class="hero-text">Wigo</div>
+    </header>
+
+    <!-- CAR DETAILS -->
+    <div class="car-details-container">
+
+        <div class="car-image">
+            <img src="../../images/Hatchback_Sedans/Wigo/Orange Metallic.png" alt="Wigo">
+        </div>
+
+        <div class="car-info">
+            <p class="variant-name">Wigo J M/T</p>
+            <p class="color-name">Orange Metallic 3</p>
+
+
+            <p class="starts-at">Starts at</p>
+            <p class="price">₱ 615,000</p> 
+
+
+            <div class="color-options">
+                <button class="color-box"
+                    data-color="Orange Metallic"
+                    data-img="../../images/Hatchback_Sedans/Wigo/Orange Metallic.png"
+                    style="background-color: rgb(255, 102, 0);">
+                </button>
+
+                <button class="color-box"
+                    data-color="Yellow SE"
+                    data-img="../../images/Hatchback_Sedans/Wigo/Yellow SE.png"
+                    style="background-color: rgb(255, 217, 0);">
+                </button>
+
+                <button class="color-box"
+                    data-color="Red Mica Metallic"
+                    data-img="../../images/Hatchback_Sedans/Wigo/Red Mica Metallic.png"
+                    style="background-color: rgb(255, 0, 0);">
+                </button>
+
+                 <button class="color-box"
+                    data-color="Silver Metallic"
+                    data-img="../../images/Hatchback_Sedans/Wigo/Silver Metallic.png"
+                    style="background-color: rgb(206, 206, 206);">
+                </button>
+
+                 <button class="color-box"
+                    data-color="Gray Metallic"
+                    data-img="../../images/Hatchback_Sedans/Wigo/Gray Metallic.png"
+                    style="background-color: rgb(59, 59, 59);">
+                </button>
+
+                 <button class="color-box"
+                    data-color="White"
+                    data-img="../../images/Hatchback_Sedans/Wigo/White.png"
+                    style="background-color: white;">
+                </button>
+            </div>
+            
+            <p class="title">Transmission</p>
+            <p class="type">5-speed MT</p> 
+            <br>
+            <p class="title">Fuel Type</p>
+            <p class="type">Gasoline</p> 
+            <br>
+            <p class="title">Seating Capacity</p>
+            <p class="type">36</p> 
+        </div>
+    </div>
+
+    <!-- CAR SPECIFICATIONS -->
+    <div class="car-specs">
+        <h2 class="specs-title">Full Specifications</h2>
+
+        <table class="specs-table">
+            <tr><th colspan="2">Dimension and Weight</th></tr>
+            <tr><td>Overall Dimensions (mm)</td><td>3760 x 1665 x 1515</td></tr>
+            <tr><td>Wheelbase (mm)</td><td>2525</td></tr>
+            <tr><td>Seating Capacity</td><td>5</td></tr>
+
+            <tr><th colspan="2">Engine</th></tr>
+            <tr><td>Engine Type</td><td>3-cylinder, In-Line, 12-valve DOHC with VVT</td></tr>
+            <tr><td>Engine Displacement (cc)</td><td>998</td></tr>
+            <tr><td>Maximum Output (ps/rpm)</td><td>67 / 6000</td></tr>
+            <tr><td>Maximum Torque (Nm/Rpm)</td><td>89 / 4400</td></tr>
+            <tr><td>Fuel Type</td><td>Gasoline</td></tr>
+            <tr><td>Fuel Capacity (L)</td><td>36</td></tr>
+
+            <tr><th colspan="2">Transmission</th></tr>
+            <tr><td>Transmission</td><td>5-speed MT</td></tr>
+            <tr><td>Power Transmission</td><td>FWD</td></tr>
+
+            <tr><th colspan="2">Chassis</th></tr>
+            <tr><td>Front Brake / Rear Brake</td><td>Fr: Ventilated Discs / Rr: Drum</td></tr>
+            <tr><td>Tires</td><td>175/65 R14</td></tr>
+            <tr><td>Wheels (size)</td><td>14" Alloy</td></tr>
+
+            <tr><th colspan="2">Safety and Security</th></tr>
+            <tr><td>SRS Airbags</td><td>D +P</td></tr>
+            <tr><td>ABS</td><td>With</td></tr>
+            <tr><td>VSC</td><td>With</td></tr>
+            <tr><td>Hill-Start Assist Control</td><td>With</td></tr>
+            <tr><td>Front Seatbelts</td><td>3pt. ELR Pretensioner + Force Limiter x 2</td></tr>
+            <tr><td>Seat Belt Reminder</td><td>With</td></tr>
+            <tr><td>Child Restraint System</td><td>With</td></tr>
+            <tr><td>Child Lock Protection</td><td>Isofix Tether Anchor: 2</td></tr>
+            <tr><td>Rear #1 Seatbelts</td><td>With</td></tr>
+            <tr><td>Rear #2 Seatbelts</td><td>With</td></tr>
+        </table>
+    </div>
+
+    <!-- JAVASCRIPT CODE FOR COLOR-BOX BUTTONS -->
+    <script>
+    document.querySelectorAll(".color-box").forEach(button => {
+        button.addEventListener("click", function () {
+            const newColor = this.getAttribute("data-color");
+            const newImage = this.getAttribute("data-img");
+
+            document.querySelector(".car-image img").src = newImage;
+            document.querySelector(".color-name").textContent = newColor;
+        });
+    });
+    </script>
+</body>
+</html>
