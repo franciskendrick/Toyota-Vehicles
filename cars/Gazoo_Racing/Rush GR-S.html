@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush_GR-S</title>
+    <link rel="stylesheet" href="../../css/cars.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION BAR -->
+    <nav class="top-nav">
+        <a href="https://toyota.com.ph/" class="logo-link" target="_blank">
+            <img src="../../images/toyota_logo.png" alt="Toyota Logo">
+        </a>
+
+        <ul class="main-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../about.html">About Us</a></li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER SECTION -->
+    <header class="hero">
+        <img src="../../images/Gazoo_Racing/Rush_GR-S/header.webp" alt="Header">
+        <div class="hero-text">Rush GR-S</div>
+    </header>
+
+    <!-- CAR DETAILS -->
+    <div class="car-details-container">
+
+        <div class="car-image">
+            <img src="../../images/Gazoo_Racing/Rush_GR-S/Black Metallic 1.png" alt="Rush GR-S">
+        </div>
+
+        <div class="car-info">
+            <p class="variant-name">Rush GR-S 1.5L CVT</p>
+            <p class="color-name">Black Metallic 1</p>
+
+            <p class="starts-at">Starts at</p>
+            <p class="price">₱ 1,048,000</p> 
+
+            <div class="color-options">
+                <button class="color-box"
+                    data-color="Black Metallic 1"
+                    data-img="../../images/Gazoo_Racing/Rush_GR-S/Black Metallic 1.png"
+                    style="background-color: rgb(0, 0, 0);">
+                </button>
+
+                <button class="color-box"
+                    data-color="Dark Red Mica Metallic"
+                    data-img="../../images/Gazoo_Racing/Rush_GR-S/Dark Red Mica Metallic.png"
+                    style="background-color: rgb(109, 0, 0);">
+                </button>
+
+                <button class="color-box"
+                    data-color="White 2"
+                    data-img="../../images/Gazoo_Racing/Rush_GR-S/White 2.png"
+                    style="background-color: white;">
+                </button>
+            </div>
+            
+            <p class="title">Transmission</p>
+            <p class="type">CVT</p> 
+            <br>
+            <p class="title">Fuel Type</p>
+            <p class="type">Gasoline</p> 
+            <br>
+            <p class="title">Seating Capacity</p>
+            <p class="type">7</p> 
+        </div>
+    </div>
+
+    <!-- CAR SPECIFICATIONS -->
+    <div class="car-specs">
+        <h2 class="specs-title">Full Specifications</h2>
+
+        <table class="specs-table">
+            <tr><th colspan="2">Dimension and Weight</th></tr>
+            <tr><td>Overall Dimensions (mm)</td><td>4,435 × 1,695 × 1,705</td></tr>
+            <tr><td>Wheelbase (mm)</td><td>2,685</td></tr>
+            <tr><td>Seating Capacity</td><td>7</td></tr>
+
+            <tr><th colspan="2">Engine</th></tr>
+            <tr><td>Engine Type</td><td>1.5L 4-Cylinder Gasoline</td></tr>
+            <tr><td>Engine Displacement (cc)</td><td>1,496</td></tr>
+            <tr><td>Maximum Output (ps/rpm)</td><td>106 / 6,000</td></tr>
+            <tr><td>Maximum Torque (Nm/Rpm)</td><td>138 / 4,200</td></tr>
+            <tr><td>Fuel Type</td><td>Gasoline</td></tr>
+            <tr><td>Fuel Capacity (L)</td><td>45</td></tr>
+
+            <tr><th colspan="2">Transmission</th></tr>
+            <tr><td>Transmission</td><td>CVT</td></tr>
+            <tr><td>Power Transmission</td><td>Rear-wheel Drive</td></tr>
+
+            <tr><th colspan="2">Chassis</th></tr>
+            <tr><td>Front Brake / Rear Brake</td><td>Ventilated Discs / Drums</td></tr>
+            <tr><td>Tires</td><td>215/60 R17</td></tr>
+            <tr><td>Wheels (size)</td><td>17″ Alloy</td></tr>
+
+            <tr><th colspan="2">Safety and Security</th></tr>
+            <tr><td>SRS Airbags</td><td>Driver + Passenger + Side + Curtain</td></tr>
+            <tr><td>ABS</td><td>Yes</td></tr>
+            <tr><td>VSC</td><td>Yes</td></tr>
+            <tr><td>Hill-Start Assist Control</td><td>Yes</td></tr>
+            <tr><td>Front Seatbelts</td><td>3-point × 2</td></tr>
+            <tr><td>Seat Belt Reminder</td><td>Yes</td></tr>
+            <tr><td>Child Restraint System</td><td>ISOFIX + Tether Anchor</td></tr>
+            <tr><td>Child Lock Protection</td><td>Yes</td></tr>
+            <tr><td>Rear #1 Seatbelts</td><td>3-point × 3</td></tr>
+            <tr><td>Rear #2 Seatbelts</td><td>—</td></tr>
+        </table>
+    </div>
+
+    <!-- JAVASCRIPT CODE FOR COLOR-BOX BUTTONS -->
+    <script>
+    document.querySelectorAll(".color-box").forEach(button => {
+        button.addEventListener("click", function () {
+            const newColor = this.getAttribute("data-color");
+            const newImage = this.getAttribute("data-img");
+
+            document.querySelector(".car-image img").src = newImage;
+            document.querySelector(".color-name").textContent = newColor;
+        });
+    });
+    </script>
+</body>
+</html>

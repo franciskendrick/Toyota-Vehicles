@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corolla Altis</title>
+    <link rel="stylesheet" href="../../css/cars.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION BAR -->
+    <nav class="top-nav">
+        <a href="https://toyota.com.ph/" class="logo-link" target="_blank">
+            <img src="../../images/toyota_logo.png" alt="Toyota Logo">
+        </a>
+
+        <ul class="main-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../about.html">About Us</a></li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER SECTION -->
+    <header class="hero">
+        <img src="../../images/Hatchback_Sedans/Corolla_Altis/Header.webp" alt="Header">
+        <div class="hero-text"><pre>Corolla Altis</div></pre>
+    </header>
+
+    <!-- CAR DETAILS -->
+    <div class="car-details-container">
+
+        <div class="car-image">
+            <img src="../../images/Hatchback_Sedans/Corolla_Altis/Metal Stream Metallic.png" alt="Corolla Altis">
+        </div>
+
+        <div class="car-info">
+            <p class="variant-name">Corolla Altis 1.8 E CVT</p>
+            <p class="color-name">Metal Stream Metallic</p>
+
+
+            <p class="starts-at">Starts at</p>
+            <p class="price">₱ 1,213,000.00</p> 
+
+
+            <div class="color-options">
+                <button class="color-box"
+                    data-color="Metal Stream Metallic"
+                    data-img="../../images/Hatchback_Sedans/Corolla_Altis/Metal Stream Metallic.png"
+                    style="background-color: silver;">
+                </button>
+
+                <button class="color-box"
+                    data-color="Attitude Black Mica"
+                    data-img="../../images/Hatchback_Sedans/Corolla_Altis/Attitude Black Mica.png"
+                    style="background-color: black;">
+                </button>
+
+                <button class="color-box"
+                    data-color="Red Mica Metallic"
+                    data-img="../../images/Hatchback_Sedans/Corolla_Altis/Red Mica Metallic.png"
+                    style="background-color: Red;">
+                </button>
+
+                <button class="color-box"
+                    data-color="Platinum White Pearl Mica"
+                    data-img="../../images/Hatchback_Sedans/Corolla_Altis/Platinum White Pearl Mica.png"
+                    style="background-color: White;">
+                </button>
+            </div>
+            
+            <p class="title">Transmission</p>
+            <p class="type">CVT</p> 
+            <br>
+            <p class="title">Fuel Type</p>
+            <p class="type">Gasoline</p> 
+            <br>
+            <p class="title">Seating Capacity</p>
+            <p class="type">5</p> 
+        </div>
+    </div>
+
+    <!-- CAR SPECIFICATIONS -->
+    <div class="car-specs">
+        <h2 class="specs-title">Full Specifications</h2>
+
+        <table class="specs-table">
+            <tr><th colspan="2">Dimension and Weight</th></tr>
+            <tr><td>Overall Dimensions (mm)</td><td>4635 x 1780 x 1435</td></tr>
+            <tr><td>Wheelbase (mm)</td><td>2700</td></tr>
+            <tr><td>Seating Capacity</td><td>5</td></tr>
+
+            <tr><th colspan="2">Engine</th></tr>
+            <tr><td>Engine Type</td><td>2ZR-FE: In-Line 4, 16 Valve DOHC, Chain Drive with Dual WT-I</td></tr>
+            <tr><td>Engine Displacement (cc)</td><td>1798</td></tr>
+            <tr><td>Maximum Output (ps/rpm)</td><td>140 / 6,400</td></tr>
+            <tr><td>Maximum Torque (Nm/Rpm)</td><td>172 / 4,000</td></tr>
+            <tr><td>Fuel Type</td><td>Gasoline</td></tr>
+            <tr><td>Fuel Capacity (L)</td><td>50</td></tr>
+
+            <tr><th colspan="2">Transmission</th></tr>
+            <tr><td>Transmission</td><td>CVT</td></tr>
+            <tr><td>Power Transmission</td><td>FWD</td></tr>
+
+            <tr><th colspan="2">Chassis</th></tr>
+            <tr><td>Front Brake / Rear Brake</td><td>Ventilated Discs / Solid Discs</td></tr>
+            <tr><td>Tires</td><td>225/45 R17 Alloy (GR-S)</td></tr>
+            <tr><td>Wheels (size)</td><td>225/45 R17 Alloy - GR-S Design</td></tr>
+
+            <tr><th colspan="2">Safety and Security</th></tr>
+            <tr><td>SRS Airbags</td><td>Driver, Driver Knee, Passenger, Side, Curtain Shield (7)</td></tr>
+            <tr><td>ABS</td><td>With Electronic Brakeforce Distribution</td></tr>
+            <tr><td>VSC</td><td>With</td></tr>
+            <tr><td>Hill-Start Assist Control</td><td>With</td></tr>
+            <tr><td>Front Seatbelts</td><td>3 pt. ELR with Pretensioner and Force Limiter</td></tr>
+            <tr><td>Seat Belt Reminder</td><td>With</td></tr>
+            <tr><td>Child Restraint System</td><td>ISOFIX & Tether Anchor</td></tr>
+            <tr><td>Child Lock Protection</td><td>With</td></tr>
+            <tr><td>Rear #1 Seatbelts</td><td>With</td></tr>
+            <tr><td>Rear #2 Seatbelts</td><td>With</td></tr>
+        </table>
+    </div>
+
+    <!-- JAVASCRIPT CODE FOR COLOR-BOX BUTTONS -->
+    <script>
+    document.querySelectorAll(".color-box").forEach(button => {
+        button.addEventListener("click", function () {
+            const newColor = this.getAttribute("data-color");
+            const newImage = this.getAttribute("data-img");
+
+            document.querySelector(".car-image img").src = newImage;
+            document.querySelector(".color-name").textContent = newColor;
+        });
+    });
+    </script>
+</body>
+</html>
