@@ -112,10 +112,12 @@ body {
     text-decoration: none;
     padding: 8px 12px;
     display: block;
+    transition: 0.2s ease;
 }
 
 .category-nav li a:hover {
-    text-decoration: underline;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 6px;
 }
 
 
@@ -198,4 +200,63 @@ body {
     color: var(--black);
     text-decoration: none;
     white-space: nowrap;        /* prevents line breaks */
+}
+
+
+/* Developer Sections */
+.developer-section {
+    padding: 50px 40px;
+    margin-top: 30px;
+}
+
+.developer-card {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Developer Photo */
+.dev-photo {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid var(--red);
+}
+
+/* Developer Info */
+.dev-info {
+    flex: 1;
+}
+
+.dev-info h2 {
+    font-size: 32px;
+    color: var(--black);
+    margin-bottom: 12px;
+    border-left: 6px solid var(--red);
+    padding-left: 12px;
+}
+
+/* CV Placeholder */
+.cv-placeholder {
+    margin-top: 10px;
+    background-color: white;
+    padding: 15px 20px;
+    border-left: 5px solid var(--black);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 22px;
+    text-align: justify;
+}
+
+/* Contact section */
+.contact-placeholder {
+    margin-top: 18px;
+    padding: 15px 20px;
+    background-color: #ececec;
+    border-radius: 8px;
 }
