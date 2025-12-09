@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corolla Cross GR</title>
+    <link rel="stylesheet" href="../../css/cars.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION BAR -->
+    <nav class="top-nav">
+        <a href="https://toyota.com.ph/" class="logo-link" target="_blank">
+            <img src="../../images/toyota_logo.png" alt="Toyota Logo">
+        </a>
+
+        <ul class="main-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../about.html">About Us</a></li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER SECTION -->
+    <header class="hero">
+        <img src="../../images/Gazoo_Racing/Corolla_Cross_GR/header.webp" alt="Header">
+        <div class="hero-text"><pre>Corolla Cross GR</pre></div>
+    </header>
+
+    <!-- CAR DETAILS -->
+    <div class="car-details-container">
+
+        <div class="car-image">
+            <img src="../../images/Gazoo_Racing/Corolla_Cross_GR/Celestite Gray Metallic.png" alt="Corolla Cross GR">
+        </div>
+
+        <div class="car-info">
+            <p class="variant-name">Corolla Cross GR-S 1.8 GR HEV CVT</p>
+            <p class="color-name">Celestite Gray Metallic</p>
+
+
+            <p class="starts-at">Starts at</p>
+            <p class="price">₱ 1,943,000</p> 
+
+
+            <div class="color-options">
+                <button class="color-box"
+                    data-color="Celestite Gray Metallic"
+                    data-img="../../images/Gazoo_Racing/Corolla_Cross_GR/Celestite Gray Metallic.png"
+                    style="background-color: rgb(53, 53, 53);">
+                </button>
+
+                <button class="color-box"
+                    data-color="Emotional Red"
+                    data-img="../../images/Gazoo_Racing/Corolla_Cross_GR/Emotional Red.png"
+                    style="background-color: rgb(172, 0, 0);">
+                </button>
+
+                <button class="color-box"
+                    data-color="Metal Stream Metallic"
+                    data-img="../../images/Gazoo_Racing/Corolla_Cross_GR/Metal Stream Metallic.png"
+                    style="background-color: rgb(58, 58, 58);">
+                </button>
+
+                <button class="color-box"
+                    data-color="Platinum White Pearl Mica"
+                    data-img="../../images/Gazoo_Racing/Corolla_Cross_GR/Platinum White Pearl Mica.png"
+                    style="background-color: rgb(255, 255, 255);">
+                </button>
+
+            </div>
+            
+            <p class="title">Transmission</p>
+            <p class="type">CVT</p> 
+            <br>
+            <p class="title">Fuel Type</p>
+            <p class="type">Gasoline / Hybrid</p> 
+            <br>
+            <p class="title">Seating Capacity</p>
+            <p class="type">5</p> 
+        </div>
+    </div>
+
+    <!-- CAR SPECIFICATIONS -->
+    <div class="car-specs">
+        <h2 class="specs-title">Full Specifications</h2>
+
+        <table class="specs-table">
+            <tr><th colspan="2">Dimension and Weight</th></tr>
+            <tr><td>Overall Dimensions (mm)</td><td>4,455 × 1,825 × 1,620</td></tr>
+            <tr><td>Wheelbase (mm)</td><td>2,640</td></tr>
+            <tr><td>Seating Capacity</td><td>5</td></tr>
+
+            <tr><th colspan="2">Engine</th></tr>
+            <tr><td>Engine Type</td><td>Hybrid, 4‑Cylinder, In‑Line, 16‑Valve DOHC, chain drive with VVT‑i (2ZR‑FXE)</td></tr>
+            <tr><td>Engine Displacement (cc)</td><td>1,798</td></tr>
+            <tr><td>Maximum Output (ps / rpm)</td><td>98 / 5,200</td></tr>
+            <tr><td>Maximum Torque (Nm / rpm)</td><td>142 / 3,600</td></tr>
+            <tr><td>Fuel Type</td><td>Gasoline / Hybrid</td></tr>
+            <tr><td>Fuel Capacity (L)</td><td>36</td></tr>
+
+            <tr><th colspan="2">Transmission</th></tr>
+            <tr><td>Transmission</td><td>CVT</td></tr>
+            <tr><td>Power Transmission</td><td>Front‑Wheel Drive</td></tr>
+
+            <tr><th colspan="2">Chassis</td></tr>
+            <tr><td>Front Brake / Rear Brake</td><td>Ventilated Discs / Solid Discs</td></tr>
+            <tr><td>Tires</td><td>225/50 R18 (GR‑S Alloy)</td></tr>
+            <tr><td>Wheels (size)</td><td>18″ Alloy (GR‑S Design)</td></tr>
+
+            <tr><th colspan="2">Safety and Security</th></tr>
+            <tr><td>SRS Airbags</td><td>Driver + Front Passenger + Driver Knee + Side + Rear Side + Curtain Shield</td></tr>
+            <tr><td>ABS</td><td>Yes</td></tr>
+            <tr><td>VSC</td><td>Yes</td></tr>
+            <tr><td>Hill-Start Assist Control</td><td>Yes</td></tr>
+            <tr><td>Front Seatbelts</td><td>3‑point × 2</td></tr>
+            <tr><td>Seat Belt Reminder</td><td>Yes</td></tr>
+            <tr><td>Child Restraint System</td><td>ISOFIX + Tether Anchor</td></tr>
+            <tr><td>Child Lock Protection</td><td>Yes</td></tr>
+            <tr><td>Rear #1 Seatbelts</td><td>3‑point</td></tr>
+            <tr><td>Rear #2 Seatbelts</td><td>3‑point</td></tr>
+        </table>
+    </div>
+
+    <!-- JAVASCRIPT CODE FOR COLOR‑BOX BUTTONS -->
+    <script>
+    document.querySelectorAll(".color-box").forEach(button => {
+        button.addEventListener("click", function () {
+            const newColor = this.getAttribute("data-color");
+            const newImage = this.getAttribute("data-img");
+
+            document.querySelector(".car-image img").src = newImage;
+            document.querySelector(".color-name").textContent = newColor;
+        });
+    });
+    </script>
+</body>
+</html>
